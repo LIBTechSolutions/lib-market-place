@@ -29,13 +29,9 @@ module.exports = {
     filename: './public/bundle.js'
   },
   resolve: {
-    modules: [__dirname, 'node_modules'],
+    modules: [__dirname, 'node_modules', 'app/components/'],
     alias: {
       applicationStyles: 'app/styles/app.scss',
-      Navigation: 'app/components/Navigation.js',
-      Main: 'app/components/Main.js',
-      Home: 'app/components/Home.js',
-      Deals: 'app/components/Deals.js'
     },
     extensions: ['*', '.js']
   },
