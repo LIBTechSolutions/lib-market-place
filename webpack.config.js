@@ -35,7 +35,8 @@ module.exports = {
       Navigation: 'app/components/Navigation.js',
       Main: 'app/components/Main.js',
       Home: 'app/components/Home.js',
-      Deals: 'app/components/Deals.js'
+      Deals: 'app/components/Deals.js',
+      Categories: 'app/components/Categories.js'
     },
     extensions: ['*', '.js']
   },
