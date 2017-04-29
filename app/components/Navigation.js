@@ -16,13 +16,14 @@ export default class Navigation extends React.Component {
           <ul className="menu">
             <li className="menu-text">LIB Market Place</li>
             <li>
-              <IndexLink to="/" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Categories</IndexLink>
+              <IndexLink to="/" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Home</IndexLink>
             </li>
           </ul>
         </div>
         <div className="top-bar-right">
           <ul className="menu">
             <li>
+              <Link to="/signup" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Sign Up</Link>
               <Link to="/deals" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Deals</Link>
             </li>
           </ul>
