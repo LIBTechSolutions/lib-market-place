@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 import Main from 'Main'
-import Home from 'Home'
+import Categories from 'Categories'
 import Deals from 'Deals'
 
 // Load foundations
@@ -17,7 +17,7 @@ render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="deals" component={Deals}/>
-      <IndexRoute component={Home}/>
+      <IndexRoute component={Categories}/>
     </Route>
   </Router>,
   document.getElementById('app')
