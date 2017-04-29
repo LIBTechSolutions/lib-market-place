@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {Route, Router, IndexRoute, browserHistory} from 'react-router'
+import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 import Main from 'Main'
-import Home from 'Home'
+import Categories from 'Categories'
 import Deals from 'Deals'
 import SignUp from 'SignUp'
 
@@ -15,11 +15,11 @@ require('applicationStyles');
 
 
 render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="deals" component={Deals}/>
       <Route path="signup" component={SignUp}/>
-      <IndexRoute component={Home}/>
+      <IndexRoute component={Categories}/>
     </Route>
   </Router>,
   document.getElementById('app')

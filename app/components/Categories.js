@@ -1,8 +1,9 @@
+
 'use strict'
 
 import React from 'react'
 
-export default class Home extends React.Component {
+export default class Categories extends React.Component {
   constructor () {
     super()
   }
@@ -10,7 +11,7 @@ export default class Home extends React.Component {
   render () {
     return (
       <div>
-        <h1 className="page-title">The Home page of LIB Market Place</h1>
+        <h1 className="page-title">The Categories page of LIB Market Place</h1>
       </div>
     )
   }
