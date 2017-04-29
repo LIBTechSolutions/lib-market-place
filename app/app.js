@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {Route, Router, IndexRoute, browserHistory} from 'react-router'
+import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 import Main from 'Main'
 import Categories from 'Categories'
 import Deals from 'Deals'
@@ -14,7 +14,7 @@ require('applicationStyles');
 
 
 render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="deals" component={Deals}/>
       <IndexRoute component={Categories}/>

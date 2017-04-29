@@ -1,6 +1,6 @@
 # lib-market-place
 
-An online store for purchasing almost everything in LIB
+LIB Market Place - Techsol initiative
 
 ## Install
 
