@@ -18,19 +18,15 @@ export default class Navigation extends React.Component {
             <li>
               <IndexLink to="/" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Home</IndexLink>
             </li>
-          </ul>
-        </div>
-        <div className="top-bar-right">
-          <ul className="menu">
             <li>
-              <Link to="deals" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Deals</Link>
+              <Link to="/lodgeandsuites" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Lodge & Suites</Link>
             </li>
           </ul>
         </div>
         <div className="top-bar-right">
           <ul className="menu">
             <li>
-              <Link to="realestate" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Real Estate</Link>
+              <Link to="deals" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Deals</Link>
             </li>
           </ul>
         </div>
