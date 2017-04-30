@@ -11,20 +11,16 @@ export default class LoginForm extends React.Component {
 
   render () {
     return (
-            <div className='login-Form'>
-              <form>
-                     <input type="Text"
-                      placeholder='Please Enter Your User Name'
-                      />
-                        <input type="Text"
-                          placeholder='Please Enter Your Password'
-                          />
-                        <button className='button expanded'>Login</button>
-                  </form>
-                  <div>
-                        <p> Dont have an account?   <Link to="SignUpForm" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Sign Up Here</Link></p>
-                  </div>
-                  </div>
-    )
-  }
-}
+      <div className='login-Form'>
+        <form>
+          <input type="text" placeholder='Username'/>
+          <input type="text" placeholder='Password'/>
+          <button className='button expanded'>Login</button>
+        </form>
+        <div>
+          <p> Dont have an account?   <Link to="signupform" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Signup</Link></p>
+        </div>
+      </div>
+       )
+    }
+ }
