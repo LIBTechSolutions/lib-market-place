@@ -1,10 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {Route, Router, IndexRoute, browserHistory} from 'react-router'
+import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 import Main from 'Main'
-import Home from 'Home'
+import Categories from 'Categories'
 import Deals from 'Deals'
 import LodgeSuites from 'LodgeSuites'
+import LoginPage from 'LoginPage'
+import SignUp from 'SignUp'
+import Fashion from 'Fashion'
+import LocalMarket from 'LocalMarket'
 
 // Load foundations
 $(document).foundation();
@@ -15,11 +19,15 @@ require('applicationStyles');
 
 
 render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={Main}>
+      <Route path="market" component={LocalMarket}/>
+      <Route path="fashion" component={Fashion}/>
+      <Route path="signup" component={SignUp}/>
       <Route path="deals" component={Deals}/>
       <Route path="lodgeandsuites" component={LodgeSuites}/>
-      <IndexRoute component={Home}/>
+      <Route path="login" component={LoginPage}/>
+      <IndexRoute component={Categories}/>
     </Route>
   </Router>,
   document.getElementById('app')

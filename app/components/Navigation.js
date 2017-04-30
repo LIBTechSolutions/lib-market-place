@@ -9,6 +9,12 @@ export default class Navigation extends React.Component {
     super()
   }
 
+  handleSearch (searchText) {
+    this.setState({
+      searchText: searchText.toLowerCase()
+    })
+  }
+
   render () {
     return (
       <div className="top-bar">
@@ -16,7 +22,13 @@ export default class Navigation extends React.Component {
           <ul className="menu">
             <li className="menu-text">LIB Market Place</li>
             <li>
-              <IndexLink to="/" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Home</IndexLink>
+              <IndexLink to="/" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Categories</IndexLink>
+            </li>
+            <li>
+              <IndexLink to="/market" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Local Market</IndexLink>
+            </li>
+            <li>
+              <IndexLink to="/fashion" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Fashion</IndexLink>
             </li>
             <li>
               <Link to="/lodgeandsuites" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Lodge & Suites</Link>
@@ -26,7 +38,13 @@ export default class Navigation extends React.Component {
         <div className="top-bar-right">
           <ul className="menu">
             <li>
-              <Link to="deals" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Deals</Link>
+              <Link to="/signup" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>SignUp</Link>
+            </li>
+            <li>
+              <Link to="/login" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Login</Link>
+            </li>
+            <li>
+              <Link to="/deals" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Deals</Link>
             </li>
           </ul>
         </div>
