@@ -35,7 +35,10 @@ export default class Navigation extends React.Component {
         <div className="top-bar-right">
           <ul className="menu">
             <li>
-              <Link to="/signup" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Sign Up</Link>
+              <Link to="/signup" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>SignUp</Link>
+            </li>
+            <li>
+              <Link to="/login" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Login</Link>
             </li>
             <li>
               <Link to="/deals" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Deals</Link>
