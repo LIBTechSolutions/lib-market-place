@@ -21,3 +21,15 @@ export function getUsers() {
 
   return $.isArray(users) ? users : []
 }
+
+export function filterUsers (users, searchText) {
+  let filteredUsers = users
+
+
+  filteredUsers = filteredUsers.filter((user) => {
+    let text = user.yourName.toLowerCase();
+    return searchText.length === 0 || text.indexOf(searchText) > -1;
+  });
+
+  return filteredUsers
+}

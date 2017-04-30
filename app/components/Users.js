@@ -8,10 +8,10 @@ export default class Users extends React.Component {
   }
 
   render () {
-    let {id, yourName, userName, email, phoneNumber, password, reenterPassword} = this.props
+    let {yourName, userName, email, phoneNumber, password} = this.props
     return (
       <div>
-        {id} {yourName} {userName} {email} {phoneNumber} {password} {reenterPassword}
+        <p>Name: {yourName} Username: {userName} Email: {email} Phone: {phoneNumber} Password: {password}</p>
       </div>
     )
   }

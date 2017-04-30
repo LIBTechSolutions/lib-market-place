@@ -14,8 +14,10 @@ export default class Main extends React.Component {
       <div>
         <Navigation/>
         <div className="row">
-          <div className="column small-centered medium-6 large-4">
-            {this.props.children}
+          <div className="column small-centered small-11 medium-6 large-5">
+            <div className='container'>
+              {this.props.children}
+            </div>
           </div>
         </div>
       </div>

@@ -43,10 +43,8 @@ export default class SignUpForm extends React.Component {
   }
   render () {
     return (
-
       <div className='signupform'>
-      <div className='space'></div>
-      <div>
+      <div className='container'>
         <form onSubmit={this.handleSubmit}>
           <input type='text' ref='yourName' placeholder='Your Name'/>
           <input type='text' ref='userName' placeholder='Username'/>

@@ -5,6 +5,8 @@ import Main from 'Main'
 import Categories from 'Categories'
 import Deals from 'Deals'
 import SignUp from 'SignUp'
+import Fashion from 'Fashion'
+import LocalMarket from 'LocalMarket'
 
 // Load foundations
 $(document).foundation();
@@ -17,8 +19,10 @@ require('applicationStyles');
 render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Route path="deals" component={Deals}/>
+      <Route path="market" component={LocalMarket}/>
+      <Route path="fashion" component={Fashion}/>
       <Route path="signup" component={SignUp}/>
+      <Route path="deals" component={Deals}/>
       <IndexRoute component={Categories}/>
     </Route>
   </Router>,
