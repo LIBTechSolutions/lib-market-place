@@ -2,7 +2,6 @@
 
 import React from 'react'
 import SignUpForm from 'SignUpForm'
-import UserList from 'UserList'
 import uuid from 'node-uuid'
 import {setUsers, getUsers} from 'UsersApi'
 
@@ -36,11 +35,10 @@ export default class SignUp extends React.Component {
   }
 
   render () {
-    let {users} = this.state
     return (
       <div>
-        <UserList users={users}/>
-        <SignUpForm onAddValue={this.handleUsers}/>
+        <h1 className='page-title'>Sign Up Now</h1>
+            <SignUpForm onAddValue={this.handleUsers}/>
       </div>
     )
   }
